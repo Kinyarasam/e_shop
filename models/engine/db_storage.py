@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
+from models.base_model import Base
+from models.customer import Customer
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
-from models.base_model import Base
 
 
-DB_USERNAME = ''
-DB_PASSWORD = ''
+DB_USERNAME = 'shop_dev'
+DB_PASSWORD = 'shop_dev_pwd'
 DB_HOST = 'localhost'
 DB_PORT = 3306
-DB_DATABASE = ''
-ENV = ''
+DB_DATABASE = 'shop_dev_db'
+ENV = 'test'
 
 
-CLASSES = {}
+CLASSES = {
+    "Customer": Customer
+}
 
 
 class DBStorage:
