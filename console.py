@@ -59,7 +59,6 @@ class AICMD(cmd.Cmd):
         else:
             print("** class doesn't exist **")
             return False
-        print(instance)
         print(instance.id)
         instance.save()
 
