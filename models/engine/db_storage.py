@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 from models.base_model import Base
 from models.customer import Customer
+from models.product import Product
+from models.address import Address
+from models.order import Order
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 
@@ -14,7 +17,10 @@ ENV = 'test'
 
 
 CLASSES = {
-    "Customer": Customer
+    "Customer": Customer,
+    "Address": Address,
+    "Order": Order,
+    "Product": Product
 }
 
 
