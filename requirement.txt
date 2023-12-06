@@ -1,4 +1,5 @@
 Flask
 mysql-connector-python
 mysqlclient
+pep8
 SQLAlchemy
